@@ -8,9 +8,13 @@ POC with already exisitng tools
 
 ### Watchman 
 
+Register a trigger
+
 ```
 watchman -j
 ```
+
+Then it expect you to put paste below json
 
 ```
 ["trigger", ".", {
@@ -19,6 +23,8 @@ watchman -j
     "command": ["C:\\Program Files\\Git\\usr\\bin\\bash.exe", "-c", "C:\\Users\\Administrator\\Documents\\Projects\\ManedCode\\script\\main.sh", "${root}", "${files}"]
 }]
 ```
+
+To log an issue or debug in general run
 
 ```
 watchman --logfile=C:\Users\Administrator\Documents\Projects\ManedCode\script\watchman.log --log-level debug
