@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM ubuntu:latest
 #Build args
 ARG VCS_REF
 ARG BUILD_DATE
